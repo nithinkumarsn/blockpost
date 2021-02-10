@@ -1,38 +1,123 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&display=swap');
+
+
+.left{
+  float: left;
+  position: relative;
+  margin-left: -20px;
+  width: 50%;
+}
+
+.image{
+  width: 100%;
+  height: 100%;
+  image-rendering: auto;
+  object-fit: cover;
+  
+}
+
+.heading{
+  position:absolute;
+  top:28%;
+  left:28%;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color:white;
+  font-family: 'IM Fell French Canon', serif;
 }
 
-.App-link {
-  color: #61dafb;
+.btmhead{
+  position: absolute;
+  bottom: 30px;
+  left:30%;
+  color:white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-family: 'IM Fell French Canon', serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.right{
+  float: right;
+  width: 50%;
+  padding: 20px ;
+  align-items: center;
+  justify-self:center;
+  margin-left: 0px;
+  margin-top:100px;
+}
+
+.cover{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.btn{
+  background-color: #c9e3f7;
+  color:#313f62;
+  font-size: large;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.btnclass{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.left-border{
+  background-color: white;
+  border-left: solid #313f62 2px;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #313f62;
+  font-size: 21px;
+}
+
+.lastpara{
+  color:#313f62;
+}
+
+.six{
+  font-size: 15px;
+}
+
+
+
+
+@media screen and (max-width: 600px){
+  .cover{
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .left {
+    width: 100%;
   }
+
+  .right{
+    width: 100%;
+    margin-top:20px;
+  }
+  
+  h1{
+    font-size: 18px;
+  }
+
+  h2{
+    font-size: 16px;
+  }
+
+  h6 {
+    font-size: 14px;
+  }
+
+  p{
+    font-size: 15px;
+  }
+ 
 }
